@@ -1,5 +1,4 @@
-﻿using System;
-using System.Configuration;
+﻿using System.Configuration;
 
 namespace HelloLooselyCoupledConfiguration
 {
@@ -7,11 +6,13 @@ namespace HelloLooselyCoupledConfiguration
     {
         static void Main()
         {
-            var introducer = new Introducer(new Configuration(key => ConfigurationManager.AppSettings[key]));
+            var introducer = new Introducer(
+                new Console(),
+                new Configuration(key => ConfigurationManager.AppSettings[key]));
 
             introducer.SayHello();
 
-            Console.ReadLine();
+            System.Console.ReadLine();
         }
     }
 }

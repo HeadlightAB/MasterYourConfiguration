@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using System.Net.Http;
 using MasterYourConfig.Shared.Models;
 
@@ -7,17 +6,19 @@ namespace HelloLooselyCoupledConfiguration
 {
     public class Introducer
     {
+        private readonly IConsole _console;
         private readonly IConfiguration _configuration;
 
-        public Introducer(IConfiguration configuration)
+        public Introducer(IConsole console, IConfiguration configuration)
         {
+            _console = console;
             _configuration = configuration;
         }
 
         public void SayHello()
         {
-            Console.Write("Hello, what's your name? ");
-            var name = Console.ReadLine();
+            _console.Write("Hello, what's your name? ");
+            var name = _console.ReadLine();
 
             var httpClient = new HttpClient();
             var requestUri = _configuration.RandomPersonGeneratorApiLocation;
@@ -27,9 +28,9 @@ namespace HelloLooselyCoupledConfiguration
 
             var randomPersonResults = Newtonsoft.Json.JsonConvert.DeserializeObject<RandomPersonResults>(result);
 
-            Console.WriteLine($"Hello {name}, my name is {randomPersonResults.Results[0].Name.First}.");
-            Console.WriteLine($"I have {randomPersonResults.Results.Length - 1} friends, " +
-                              $"{string.Join(", ", randomPersonResults.Results.Select(x => x.Name.First))}");
+            _console.WriteLine($"Hello {name}, my name is {randomPersonResults.Results[0].Name.First}.");
+            _console.WriteLine($"I have {randomPersonResults.Results.Length - 1} friends, " +
+                              $"{string.Join(", ", randomPersonResults.Results.Skip(1).Select(x => x.Name.First))}");
         }
     }
 }

@@ -1,16 +1,14 @@
-﻿using System;
-
-namespace HelloConfigurationManager
+﻿namespace HelloConfigurationManager
 {
     internal class Program
     {
         static void Main()
         {
-            var introducer = new Introducer();
+            var introducer = new Introducer(new Console());
 
             introducer.SayHello();
 
-            Console.ReadLine();
+            System.Console.ReadLine();
         }
     }
 }
