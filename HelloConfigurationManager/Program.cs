@@ -1,4 +1,6 @@
-﻿namespace HelloConfigurationManager
+﻿using MasterYourConfig.Shared;
+
+namespace HelloConfigurationManager
 {
     internal class Program
     {

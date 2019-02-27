@@ -1,6 +1,7 @@
 ﻿using System.Configuration;
 using System.Linq;
 using System.Net.Http;
+using MasterYourConfig.Shared;
 using MasterYourConfig.Shared.Models;
 
 namespace HelloConfigurationManager

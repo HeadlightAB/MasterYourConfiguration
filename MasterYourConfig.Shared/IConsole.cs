@@ -1,4 +1,4 @@
-﻿namespace HelloConfigurationManager
+﻿namespace MasterYourConfig.Shared
 {
     public interface IConsole
     {
