@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloCentralizedConfigurati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloIoCConfiguration", "HelloIoCConfiguration\HelloIoCConfiguration.csproj", "{6A8580FF-6BFB-48F4-A35A-D3C04C15D14A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{77C1D7B7-D951-4CA3-BBEA-A68B91A302B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{6A8580FF-6BFB-48F4-A35A-D3C04C15D14A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A8580FF-6BFB-48F4-A35A-D3C04C15D14A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A8580FF-6BFB-48F4-A35A-D3C04C15D14A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77C1D7B7-D951-4CA3-BBEA-A68B91A302B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77C1D7B7-D951-4CA3-BBEA-A68B91A302B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77C1D7B7-D951-4CA3-BBEA-A68B91A302B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77C1D7B7-D951-4CA3-BBEA-A68B91A302B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
