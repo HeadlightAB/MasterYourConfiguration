@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MasterYourConfig.Shared", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloLooselyCoupledConfiguration", "HelloLooselyCoupledConfiguration\HelloLooselyCoupledConfiguration.csproj", "{E40C4850-8215-487D-BFBF-B34C8694FBFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloCentralizedConfiguration", "HelloCentralizedConfiguration\HelloCentralizedConfiguration.csproj", "{51DAB3AB-4D49-41D3-ACF2-DC520EF343FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloCentralizedConfiguration", "HelloCentralizedConfiguration\HelloCentralizedConfiguration.csproj", "{51DAB3AB-4D49-41D3-ACF2-DC520EF343FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloIoCConfiguration", "HelloIoCConfiguration\HelloIoCConfiguration.csproj", "{6A8580FF-6BFB-48F4-A35A-D3C04C15D14A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{51DAB3AB-4D49-41D3-ACF2-DC520EF343FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51DAB3AB-4D49-41D3-ACF2-DC520EF343FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51DAB3AB-4D49-41D3-ACF2-DC520EF343FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A8580FF-6BFB-48F4-A35A-D3C04C15D14A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A8580FF-6BFB-48F4-A35A-D3C04C15D14A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A8580FF-6BFB-48F4-A35A-D3C04C15D14A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A8580FF-6BFB-48F4-A35A-D3C04C15D14A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
